@@ -16,12 +16,11 @@ html{
     box-sizing: border-box;
     scroll-behavior: smooth;
     color: #ffffff;
-    background: #414141;
+    background: #000000;
 }
 
 a{
     text-decoration: none;
-    color: rgb(47, 154, 204);
 }
 
 ul{
@@ -42,7 +41,7 @@ img{
 
 header{
     width: 100%;
-    height: 3rem;
+    height: 5rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -51,13 +50,13 @@ header{
 
 .container{
     width: 100%;
-    max-width: 100rem;
+    max-width: 90rem;
     margin: 0 auto;
-    padding: 0 0;
+    padding: 0 1.5rem;
 }
 
 .nav-brand{
-    width: 10rem;
+    width: 7rem;
 }
 
 nav {
@@ -65,8 +64,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 2rem;
-    border-bottom: 3px solid rgb(0, 0, 0);
+    padding: 1rem 0rem;
 }
 
 .line1{
@@ -75,8 +73,8 @@ nav {
     margin: 5px 0;
     background: linear-gradient(
         100deg, 
-        rgb(11, 150, 150) 0%,
-        rgb(255, 255, 255) 100%
+        rgb(0, 0, 0) 0%,
+        rgb(12, 151, 24) 100%
     );
 }
 
@@ -86,8 +84,8 @@ nav {
     margin: 5px 0;
     background: linear-gradient(
         100deg, 
-        rgb(11, 150, 150) 0%,
-        rgb(255, 255, 255) 100%
+        rgb(0, 0, 0) 0%,
+        rgb(12, 151, 24) 100%
     );
 }
 
@@ -97,8 +95,8 @@ nav {
     margin: 5px 0;
     background: linear-gradient(
         100deg, 
-        rgb(11, 150, 150) 0%,
-        rgb(255, 255, 255) 100%
+        rgb(0, 0, 0) 0%,
+        rgb(12, 151, 24) 100%
     );
 }
 
@@ -108,7 +106,7 @@ nav {
     position: fixed;
     right: 0;
     top: 0;
-    background: #414141;
+    background: #00000000;
     opacity: 1;
     padding: 1.5rem;
     border-radius: 50% 50% 50% 50%;
@@ -128,7 +126,7 @@ nav {
 .nav-list {
     width: 24rem;
     height: 100vh;
-    background-color: #000000;
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     right: -26rem;
@@ -152,12 +150,12 @@ nav {
     opacity: 1;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #000000;
     letter-spacing: 1.5px;
 }
 
 .nav-link:hover{
-    color: rgba(11, 150, 150);
+    color: rgb(12, 151, 24);
 }
 
 .toggle{
@@ -177,6 +175,16 @@ nav {
     margin-left: 0px;
 }
 
+@keyframes navLink{
+    from{
+        opacity: 0;
+        transform: translate(50px)
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px)
+    }
+}
 /* landing page */
 .landing-page{
     width: 100%;
@@ -184,10 +192,12 @@ nav {
     background: linear-gradient(
         150deg,
         rgba(226, 229, 233, 0.555) 0%,
-        rgba(0, 0, 0, 0.678) 80%
+        rgba(0, 0, 0, 0.76) 100%
     ),
-    url("images/landing-page.png") center no-repeat;
-    background-size: contain;
+    url("images/landing-page.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 
@@ -216,7 +226,7 @@ nav {
     text-transform: uppercase;
     position: absolute;
     letter-spacing: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: "Changa";
     left: 50%;
     top: 40%;
@@ -232,7 +242,7 @@ nav {
 @keyframes typing{
     0%{
         width: 0ch;
-        color: white;
+        color: rgb(255, 255, 255);
     }
     100%{
         width: 40ch;
@@ -244,7 +254,7 @@ nav {
         border-right: 4px solid rgba(255, 255, 255, 0);
     }
     to{
-        border-right: 4px solid rgba(194, 194, 194);
+        border-right: 4px solid rgb(255, 255, 255);
     }
 }
 
@@ -265,7 +275,7 @@ nav {
     letter-spacing: 1rem;
     font-size: 1rem;
     font-family: "Changa";
-    left: 48.5%;
+    left: 50%;
     top: 76%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -275,7 +285,7 @@ nav {
 
 .btn{
     margin: 0 100px;
-    background: rgb(187, 190, 190);
+    background: rgba(255, 255, 255, 0.774);
     border-radius: .75rem;
     color: #000000;
     padding: .5rem 2rem;
@@ -286,14 +296,14 @@ nav {
 
 .btn:hover{
     color: #ffffff;
-    background-color: rgb(11, 150, 150);
+    background-color: rgb(12, 151, 24);
 }
 
 .scroll-down i{
     width: 5%;
     position: absolute;
-    left: 48.5%;
-    top: 84%;
+    left: 50%;
+    top: 76%;
     transform: translate(-50%, -50%);
     text-align: center;
     justify-content: center;
@@ -303,5 +313,214 @@ nav {
 }
 
 .scroll-down i:hover{
-    color: rgb(11, 150, 150);
+    color: rgb(12, 151, 24);
+}
+
+/* about page */
+.about{
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.about .container{
+    display: column;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.about-img img{
+    height: 15rem;
+    width: auto;
+    border-radius: 50%;
+    margin: 1.5% 0% 0% 43%;
+    box-shadow: 0 15px 30px 0 rgb(255, 255, 255,5);
+}
+
+.about-text-box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.about-text-box h2{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin: 0% 0% 0% 0%;
+}
+
+.about-text-box p{
+    font-family: "Changa";
+    font-size: 1.4rem;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    direction: column;
+}
+
+hr{
+    margin: 4rem 0;
+    background: linear-gradient(
+        to right,
+        rgba(12,151,24,1) 0%,
+        rgba(255,255,255,1) 100%
+    );
+    border: 0;
+    height: 1px;
+}
+
+/* Projects page */
+.projects{
+    padding: 3rem 0;
+    min-height: 100vh;
+    max-width: 100rem;
+    margin: auto;
+}
+
+.title-heading{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.title-heading h2{
+    font-size: 3rem;
+    margin: 0.5rem 0 0 0;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.712), rgba(255,255,255,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px 6px white;
+}
+
+.has-margin-right{
+    margin: 0 5rem 0 0;
+}
+
+.project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.45rem 5rem 1.45rem;
+}
+
+.project-img{
+    flex: 1;
+    opacity: .90;
+}
+
+.project-description{
+    flex: 1;
+}
+
+.project-description a{
+    text-decoration: none;
+    color: rgba(12,151,24,1)
+}
+
+.project-description a:hover{
+    color: white;
+}
+
+.project-description h2{
+    font-size: 2.2rem;
+    margin: 2rem 0;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: rgb(212, 212, 212);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.384), rgba(255,255,255,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-img h3{
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(rgb(12, 151, 24), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.project-description p{
+    font-family: "Changa";
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.911)
+}
+
+.project-link{
+    display: inline-block;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+/* contact page */
+.contact{
+    width: 100%;
+    margin: auto;
+    opacity: .75;
+    background: url("images/pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contact h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+.contact p{
+    font-family: "Changa";
+    font-size: 1.4rem;
+    color: black;
+    padding: 0;
+    margin: 1rem 2rem;
+    text-align: center;
+}
+
+.contact .container{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact .container a{
+    color: rgb(0, 0, 0)
+}
+
+.contact .container a:hover{
+    color: rgb(255, 255, 255);
+}
+/* footer page */
+footer{
+    width: 100%;
+    max-width: 70rem;
+    margin: auto;
+    padding: 2.5rem;
+    color: rgb(160, 158, 158);
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+footer a{
+    margin: 0 0.2rem;
+    color: rgb(12, 151, 24)
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-coded-by{
+    margin: 2rem 0;
+    font-family: "Changa";
 }

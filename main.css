@@ -554,12 +554,12 @@ footer a:hover{
         top: 55%;
     }
     .landing-page{
-        ;
+        background-position: left;
     }
     .main-message h1{
         letter-spacing: 1rem;
         font-size: 1.2rem;
-        width: 42ch;
+        width: 41.5ch;
     }
     .main-message h2{
         font-size: .85rem;

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Vanaty</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,300&family=Philosopher:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c0b73df5c8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body> 
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="" / width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li> 
+                        <li>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Shop</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="vanity.html">Vanity's</a>
+                                    <a href="dress.html">Dresses</a>
+                                    <a href="tutu.html">Tutu's</a>
+                                    <a href="beani.html">Beanies</a>
+                                    <a href="mask.html">Masks</a>
+                                    <a href="decorations.html">Party Decorations</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="account.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li class="cart">
+                            <a href="cart.html">
+                                <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Sign Up</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-nav">
+                <img src="images/logo2.png" alt="">
+                <h3>Thanks for shopping with us.</h3>
+                <p>For questions or concerns, you can reach me
+                on my contact page.</p>
+                <a href="index.html" class="footer-nav-link">Home</a>
+                <a href="about.html" class="footer-nav-link">About</a>
+                <a href="contact.html" class="footer-nav-link">Contact</a>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"><i class="fas fa-code"></i> Copyright &copy; 2020 - www.vanaty.com <i class="fas fa-desktop"></i></p>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        function myFunction(){
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event){
+            if(!event.target.matches('.dropbtn')){
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++){
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')){
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

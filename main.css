@@ -161,12 +161,12 @@ p{
 }
 
 .btn:hover{
-    background: rgb(243, 71, 214);
+    background: rgb(250,250,250);
     color: black;
 }
 
 .header{
-    background: radial-gradient(#ffffff, red);
+    background: radial-gradient(#ffffff, rgb(250,0,0);
 }
 
 .header .row{

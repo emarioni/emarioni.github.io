@@ -166,7 +166,7 @@ p{
 }
 
 .header{
-    background: radial-gradient(#ffffff, #faadbd);
+    background: radial-gradient(#ffffff, pink);
 }
 
 .header .row{
@@ -219,19 +219,7 @@ p{
     color: black;
     font-family: 'Philosopher', sans-serif;
     font-size: 30px;
-    text-shadow: 3px 3px 6px pink;
-}
-
-.title::after{
-    content: '';
-    background: pink;
-    width: 100px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    text-shadow: 3px 3px 6px rgb(56, 56, 56);
 }
 
 h4{
@@ -244,7 +232,7 @@ h4{
 }
 
 .rating .fa{
-    color: rgb(202, 149, 33);
+    color: rgb(243, 71, 214);
 }
 
 .col-4:hover{
@@ -252,7 +240,7 @@ h4{
 }
 
 .offer{
-    background: radial-gradient(#ffffff, #faadbd);
+    background: radial-gradient(#ffffff, #faaded);
     margin-top: 80px;
     padding: 30px 0;
 }

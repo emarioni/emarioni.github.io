@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c0b73df5c8.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="main.js"></script>
 </head>
 <body> 
-    <div class="header">
+    <div class="header"> 
         <div class="container">
             <div class="navbar">
                 <div class="logo">
@@ -52,43 +51,40 @@
     </div>
     <div class="small-container single-product">
         <div class="row">
-            <section class="container content-section">
-                <p class="section-header"><a href="index.html">Home</a> / <a href="vanity.html">Vanity's</a> / April 2 </p>
-                <br>
-                <div class="shop-items">
-                    <div class="shop-item">
-                        <span class="shop-item-title">April 2</span>
-                        <img class="shop-item-image" src="images/vanity1.jpg" alt="vanity1" id="ProductImg">
-                        <div class="small-img-row">
-                            <div class="small-img-col">
-                                <img src="images/vanity2.jpg" alt="vanity2" width="100%" class="small-img">
-                            </div>
-                        <div div class="small-img-col">
-                            <img src="images/vanity3.jpg" alt="vanity3" width="100%" class="small-img">
-                        </div>
-                        <div div class="small-img-col">
-                            <img src="images/vanity4.jpg" alt="vanity4" width="100%" class="small-img">
-                        </div>
-                        <div class="shop-item-details">
-                            <span class="shop-item-price">$300.00</span>
-                            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
-                        </div>
+            <div class="col-2">
+                <img src="images/vanity4.jpg" alt="vanity4" width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/vanity5.jpg" alt="vanity5" width="100%" class="small-img">
                     </div>
-                    <select> 
-                        <option>Select color</option>
-                        <option>White</option>
-                        <option>Grey</option>
-                        <option>Black</option>
-                    </select>
-                    <h3>Vanity Details</h3>
-                    <br>
-                    <p>April 2 vanity comes with 10 drawers, glossy finished top. A large 10x10
-                    mirror surrounded by 10 individual 200 lumen lights. A nice comfortable stool
-                    comes with it. Base colors are White, Black and Grey but, custom colors upon 
-                    request are available. Currently, delivery is only local for an extra charge 
-                    based on location. Pick up is also available.</p>
+                    <div div class="small-img-col">
+                        <img src="images/vanity6.jpg" alt="vanity6" width="100%" class="small-img">
+                    </div>
+                    <div div class="small-img-col">
+                        <img src="images/vanity4.jpg" alt="vanity4" width="100%" class="small-img">
+                    </div>
                 </div>
-            </section>
+            </div>
+            <div class="col-2">
+                <p><a href="index.html">Home</a> / <a href="dress.html">Vanity's</a> / April 2 </p>
+                <h1>April 2</h1>
+                <h4>$400</h4>
+                <select>
+                    <option>Select color</option>
+                    <option>White</option>
+                    <option>Grey</option>
+                    <option>Black</option>
+                </select>
+                <a class="add-cart cart4" href="#">Add to Cart</a>
+                <input type="hidden" value="400"/>
+                <h3>Dress Details</h3>
+                <br>
+                <p>April 2 vanity comes with 10 drawers, glossy finished top. A large 10x10
+                mirror surrounded by 10 individual 200 lumen lights. A nice comfortable stool
+                comes with it. Base colors are White, Black and Grey but, custom colors upon 
+                request are available. Currently, delivery is only local for an extra charge 
+                based on location. Pick up is also available.</p>
+            </div>
         </div>
     </div>
     <div class="small-container">
@@ -210,5 +206,6 @@
             ProductImg.src = SmallImg[2].src;
         }
     </script>
+    <script src="main.js"></script>
 </body>
 </html>

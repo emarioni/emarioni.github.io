@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c0b73df5c8.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="main.js"></script>
 </head>
 <body> 
     <div class="header">
@@ -50,23 +49,16 @@
             </div>
         </div>
     </div>
-    <div class="container content-section">
-        <h2 class="section-header">CART</h2>
-        <div class="cart-row">
-            <span class="cart-item cart-header cart-column">ITEM</span>
-            <span class="cart-price cart-header cart-column">PRICE</span>
-            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+   <div class="container-products">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price sm-hide">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
         </div>
-        <div class="cart-items">
-            <div class="cart-row">
-                    
-            </div>
+        <div class="products">
+
         </div>
-        <div class="cart-total">
-            <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">$0</span>
-        </div>
-        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
     </div>
     <div class="footer">
         <div class="container">
@@ -83,34 +75,6 @@
         <hr>
         <p class="copyright"><i class="fas fa-code"></i> Copyright &copy; 2020 - www.vanaty.com <i class="fas fa-desktop"></i></p>
     </div>
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
-        MenuItems.style.maxHeight = "0px";
-        function menutoggle(){
-            if(MenuItems.style.maxHeight == "0px"){
-                MenuItems.style.maxHeight = "200px";
-            }
-            else {
-                MenuItems.style.maxHeight = "0px";
-            }
-        }
-
-        function myFunction(){
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        window.onclick = function(event){
-            if(!event.target.matches('.dropbtn')){
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++){
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')){
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

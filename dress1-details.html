@@ -52,31 +52,31 @@
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="images/dress1.jpg" alt="dress1" width="100%" id="VanityImg">
+                <img src="images/tutu4.jpg" alt="tutu4" width="100%" id="ProductImg">
                 <div class="small-img-row">
                     <div class="small-img-col">
-                        <img src="images/dress2.jpg" alt="dress2" width="100%" class="small-img">
+                        <img src="images/tutu3.jpg" alt="tutu3" width="100%" class="small-img">
                     </div>
                     <div div class="small-img-col">
-                        <img src="images/dress3.jpg" alt="dress3" width="100%" class="small-img">
+                        <img src="images/tutu2.jpg" alt="tutu2" width="100%" class="small-img">
                     </div>
                     <div div class="small-img-col">
-                        <img src="images/dress4.jpg" alt="dress4" width="100%" class="small-img">
+                        <img src="images/tutu1.jpg" alt="tutu1" width="100%" class="small-img">
                     </div>
                 </div>
             </div>
             <div class="col-2">
                 <p><a href="index.html">Home</a> / <a href="dress.html">Vanity's</a> / April 2 </p>
-                <h1>Pink Dress</h1>
-                <h4>$30</h4>
+                <h1>White Dress</h1>
+                <h4>$50</h4>
                 <select>
                     <option>Select color</option>
                     <option>White</option>
                     <option>Grey</option>
                     <option>Black</option>
                 </select>
-                <a class="shop-item-button" href="#">Add to Cart</a>
-                <input type="hidden" value="30"/>
+                <a class="add-cart cart5" href="#">Add to Cart</a>
+                <input type="hidden" value="50"/>
                 <h3>Dress Details</h3>
                 <br>
                 <p>April 2 vanity comes with 10 drawers, glossy finished top. A large 10x10
@@ -190,20 +190,20 @@
         }
     </script>
     <script>
-        var VanityImg = document.getElementById("VanityImg");
+        var ProductImg = document.getElementById("ProductImg");
         var SmallImg = document.getElementsByClassName("small-img");
 
         SmallImg[0].onclick = function()
         {
-            VanityImg.src = SmallImg[0].src;
+            ProductImg.src = SmallImg[0].src;
         }
         SmallImg[1].onclick = function()
         {
-            VanityImg.src = SmallImg[1].src;
+            ProductImg.src = SmallImg[1].src;
         }
         SmallImg[2].onclick = function()
         {
-            VanityImg.src = SmallImg[2].src;
+            ProductImg.src = SmallImg[2].src;
         }
     </script>
     <script src="main.js"></script>
